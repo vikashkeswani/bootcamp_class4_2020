@@ -8,7 +8,7 @@ export default function App() {
   //setCount(10) ;  
   return (
     <div className={`box ${isMorning ? 'dayLight':'box'}`}>
-      <h1>Have A Good {isMorning ? 'Morning' : 'Night'}</h1>
+      <h1>Have A Good {isMorning ? 'Morning' : 'Night'}.</h1>
       <Message count={count}/>
       <br />
       <button onClick={
