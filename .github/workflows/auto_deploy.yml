@@ -26,12 +26,14 @@ jobs:
 
     # Runs a set of commands using the runners shell
     - name: Installing Surge
-      run: npm install --global surge
+       run: npm install -g surge
       
     - name: Installing Node Modules
       run: npm install
+
     - name : Making App Build
       run: npm run build
+
     - name: Deploying using Surge
       run: surge ./build bootcamp_class4_2020.surge.sh --token ${secrets.Surge_TOKEN}   
     
